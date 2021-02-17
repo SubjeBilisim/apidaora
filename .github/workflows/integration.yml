@@ -1,7 +1,10 @@
 name: Apidaora Integration
 
-on: [push]
-
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
 jobs:
   integration:
     runs-on: ubuntu-latest
