@@ -27,10 +27,10 @@ jobs:
         make setup-python-project
         bake setup-apidaora
         bake dependencies
-    - name: Run Code Checks
-      run: |
-        . venv/bin/activate
-        bake check-code
+   # - name: Run Code Checks
+    #  run: |
+     #   . venv/bin/activate
+      #  bake check-code
     - name: Run Tests
       run: |
         . venv/bin/activate
